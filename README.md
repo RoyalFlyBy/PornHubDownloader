@@ -11,8 +11,11 @@ A pornhub.com downloader that allows you to login so you can download everything
 #### How does it work?
 
 The script logs in on the account you supplied, then visits the link you supplied and downloads sthe video in the highest resolution availabe.
+
 Logging in is optional however in order to enjoy the features that other downloaders seem to lack it is necessary.
-Cookies will be stored locally in an encrypted manner so you don't have to worry about ppeople stealing your account nor pornhub blocking your account for suspicious activity after X logins.
+
+Cookies will be stored locally in an encrypted manner so you don't have to worry about people stealing your account nor pornhub blocking your account for suspicious activity after X logins.
+
 Downloading too many videos too quickly will result in the failure of the script, you need to visit the url in such case and do the captcha before you can resume to download again.
 
 #### Examples
