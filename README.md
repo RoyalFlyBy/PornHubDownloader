@@ -76,3 +76,14 @@ As mentioned above you can add the other flags to login and to save files with u
 ## Disclaimer
 
 Use at own risk.
+
+#### My experience
+The downloader seems to be able to do 60+ videos of decent size without getting captchas but this was with a temporary premium account.
+The program automatically crosses off the videos it managed to download from your list in case some fail you don't have to URL hunt
+This is by far the most complete downloader around.
+
+#### Future
+I don't plan on actively working on this project, I will update when I have time in case bugs occur caused by pornhub updating their services.
+Feel free to try to crack the .cookies file, if you succeed and can tell me how you did it it would be appreciated because I could always use tips on how to improve security.
+If a feature is missing let me know.
+If you think this program automatically does cool things and you get mad it can only download the files that your account has access to, please gkys.
