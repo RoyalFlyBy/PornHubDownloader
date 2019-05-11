@@ -33,14 +33,14 @@ This would result in a file called: ```little black dress and pink hair quick ji
 
 However if you login with a premium account:
 
-```PHDownloader.exe -URL=https://www.pornhub.com/view_video.php?viewkey=ph5ca48baebd5d7 -username="darfttygkbhn -pasword=adcfvhbgfsdg```
+```PHDownloader.exe -URL=https://www.pornhub.com/view_video.php?viewkey=ph5ca48baebd5d7 -username=darfttygkbhn -pasword=adcfvhbgfsdg```
 
 Now it downloads a file called: ```little black dress and pink hair quick jillin off before party.mp4``` but it would be the 1080P version.
 
 
 You can also add the flag -withuploader=true like this:
 
-```PHDownloader.exe -URL=https://www.pornhub.com/view_video.php?viewkey=ph5ca48baebd5d7 -username="darfttygkbhn -pasword=adcfvhbgfsdg -withuploader=true```
+```PHDownloader.exe -URL=https://www.pornhub.com/view_video.php?viewkey=ph5ca48baebd5d7 -username=darfttygkbhn -pasword=adcfvhbgfsdg -withuploader=true```
 
 Or:
 
