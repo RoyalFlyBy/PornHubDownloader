@@ -3,10 +3,10 @@ A pornhub.com downloader that allows you to login so you can download everything
 
 #### Supports the following things:
 
-*Premium videos
-*1080p and higher resolution
-*Private videos
-*Paid videos (untested)
+* Premium videos
+* 1080p and higher resolution
+* Private videos
+* Paid videos (untested)
 
 #### How does it work?
 
