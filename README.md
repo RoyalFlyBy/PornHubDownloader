@@ -5,7 +5,7 @@ A pornhub.com downloader that allows you to login so you can download everything
 
 * Premium videos
 * 1080p and higher resolution
-* Private videos
+* Private videos (not working since: 22nd of December 2020, ETA for fix: None until PH builds back a working catalogue of content)
 * Paid videos (untested)
 
 #### How does it work?
