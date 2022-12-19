@@ -1,0 +1,8 @@
+.env
+PornHubDownloader.log
+PornHubDownloader.exe
+.session
+*.mp4
+list.txt
+.idea
+/.idea/

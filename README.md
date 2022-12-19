@@ -1,55 +1,47 @@
 # PornHubDownloader
-A pornhub.com downloader that allows you to login so you can download everything you have access to, including but not limited to private videos, 1080p or higher resolutions, premium videos and even paid videos that you own.
+A pornhub.com downloader that allows you to login, so you can download everything you have access to, including but not limited to private videos, 1080p or higher resolutions, premium videos and even paid videos that you own.
 
 #### Supports the following things:
 
-* Premium videos
+* Premium videos (untested, no access - yet - ETA: February)
 * 1080p and higher resolution
-* Private videos (not working since: 22nd of December 2020, ETA for fix: None until PH builds back a working catalogue of content)
-* Paid videos (untested)
+* Private videos (untested - no access)
+* Paid videos (untested - no access)
 
 #### How does it work?
 
-The script logs in on the account you supplied, then visits the link you supplied and downloads sthe video in the highest resolution availabe.
+Download the program for your OS [here](https://github.com/RoyalFlyBy/PornHubDownloader/releases).
+
+The program logs in on the account you supplied, then visits the link you supplied and downloads the video in the highest resolution available.
 
 Logging in is optional however in order to enjoy the features that other downloaders seem to lack it is necessary.
-
-Cookies will be stored locally in an encrypted manner so you don't have to worry about people stealing your account nor pornhub blocking your account for suspicious activity after X logins.
 
 Downloading too many videos too quickly will result in the failure of the script, you need to visit the url in such case and do the captcha before you can resume to download again.
 
 #### Examples
 
-Regular URL: https://www.pornhub.com/view_video.php?viewkey=ph5ca48baebd5d7
+Regular URL: https://www.pornhub.com/view_video.php?viewkey=ph6378a03c46eb5
 
 Premium url: https://www.pornhubpremium.com/view_video.php?viewkey=ph5cc5d3bdc5b02
 
 Downloading a single video
 
-```PHDownloader.exe -URL=https://www.pornhub.com/view_video.php?viewkey=ph5ca48baebd5d7```
+```./pornhubdownloader -video "https://www.pornhub.com/view_video.php?viewkey=ph6378a03c46eb5"```
 
-This would result in a file called: ```little black dress and pink hair quick jillin off before party.mp4``` to be downloaded, the 720P version in this case.
-
-
-However if you login with a premium account:
-
-```PHDownloader.exe -URL=https://www.pornhub.com/view_video.php?viewkey=ph5ca48baebd5d7 -username=darfttygkbhn -pasword=adcfvhbgfsdg```
-
-Now it downloads a file called: ```little black dress and pink hair quick jillin off before party.mp4``` but it would be the 1080P version.
+This would result in a file called: ```OMG!! 😳 My STEP-SIS professional Onlyfans whore 🥵.mp4.mp4``` to be downloaded, the 720P version in this case.
 
 
-You can also add the flag -withuploader=true like this:
+You can also add a ```-namefmt``` flag to control the file name like this:
 
-```PHDownloader.exe -URL=https://www.pornhub.com/view_video.php?viewkey=ph5ca48baebd5d7 -username=darfttygkbhn -pasword=adcfvhbgfsdg -withuploader=true```
+```./pornhubdownloader -video "https://www.pornhub.com/view_video.php?viewkey=ph6378a03c46eb5" -namefmt "[:VIDEO_VIEW_KEY :DATE_UPLOADED-:TIME_UPLOADED] :UPLOADER_NAME - :VIDEO_NAME" ```
 
-Or:
+This would affect the filename, now the file will be called ```[ph6378a03c46eb5 2022-11-19-10-28-40] Angel - OMG!! 😳 My STEP-SIS professional Onlyfans whore 🥵.mp4```
 
-```PHDownloader.exe -URL=https://www.pornhub.com/view_video.php?viewkey=ph5ca48baebd5d7 -withuploader=true```
+To speed things up you can also add ```-threads``` flag like this:
 
-This would affect the filename, now the file will be called ```Euro Coeds - little black dress and pink hair quick jillin off before party.mp4``` because ```Euro Coeds``` is the uploader of the video
+```./pornhubdownloader -video "https://www.pornhub.com/view_video.php?viewkey=ph6378a03c46eb5" -threads 3```
 
-
-Alternatively you can save the links into a file in this fasion:
+Alternatively you can save the links into a file in this fashion:
 
 ```
 https://www.pornhub.com/view_video.php?viewkey=ph5ca48baebd5d7
@@ -68,16 +60,24 @@ For this example let's say I saved it next to the executable with the name ```li
 
 Then now I can download all the videos using this command:
 
-```PHDownloader.exe -list=listofvids.txt```
+```./pornhubdownloader -videos=listofvids.txt```
 
-As mentioned above you can add the other flags to login and to save files with uploader names prepended.
+As mentioned above you can add the other flags with this example to enjoy the other features.
 
+You can log in by adding a `-username` and `-password` flag like this:
+
+```./pornhubdownloader -videos=listofvids.txt -username "someusername" -password "somepassword"```
+
+Alternatively, if you don't want to type in your username and or password each time u can set the `PHDL_USERNAME` `PHDL_PASSWORD` environment variables. Keep in mind the program will not always actually login since it actually keeps an active session after logging in.
+
+#### For developers
+You can access program-friendly downloader updates by adding a ```-daemon``` flag, this will cause the program to print JSON which you could parse and build a UI with.
 
 ## Disclaimer
 
 Use at own risk.
 
-#### My experience
+#### My experience (outdated)
 The downloader seems to be able to do 60+ videos of decent size without getting captchas but this was with a temporary premium account.
 
 The program automatically crosses off the videos it managed to download from your list in case some fail you don't have to URL hunt
@@ -91,4 +91,4 @@ Feel free to try to crack the .cookies file, if you succeed and can tell me how 
 
 If a feature is missing let me know.
 
-If you think this program automatically does cool things and you get mad it can only download the files that your account has access to, please gkys.
+If you think this program automatically does cool things, and you get mad it can only download the files that your account has access to, please gkys.

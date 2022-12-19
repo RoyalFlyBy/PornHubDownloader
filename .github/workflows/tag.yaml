@@ -1,0 +1,45 @@
+# .github/workflows/tag.yaml
+
+on:
+  push:
+    tags:
+      - "v*.*.*"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Release
+        uses: softprops/action-gh-release@v1
+  releases-matrix:
+    name: Release Go Binary
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        goos: [ linux, windows, darwin ]
+        goarch: [ amd64, arm64 ]
+        exclude:
+          - goarch: arm64
+            goos: windows
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set APP_VERSION env
+        run: echo APP_VERSION=$(echo ${GITHUB_REF} | rev | cut -d'/' -f 1 | rev ) >> ${GITHUB_ENV}
+      - name: Set BUILD_TIME env
+        run: echo BUILD_TIME=$(date) >> ${GITHUB_ENV}
+      - name: Set REPO_URL env
+        run: echo REPO_URL=$(echo "github.com/${GITHUB_REPOSITORY}/") >> ${GITHUB_ENV}
+      - name: Environment Printer
+        uses: managedkaos/print-env@v1.0
+      - uses: wangyoucao577/go-release-action@v1.33
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          goos: ${{ matrix.goos }}
+          goarch: ${{ matrix.goarch }}
+          goversion: "https://dl.google.com/go/go1.19.3.linux-amd64.tar.gz"
+          binary_name: "pornhubdownloader"
+          extra_files: README.md
+          pre_command: export GO_PRIVATE=github.com/RoyalFlyBy/* && export GO_NO_SUMDB=github.com/RoyalFlyBy/* && git config --global url."https://oauth:${{secrets.GIT_AUTH}}@github.com/".insteadOf "https://github.com/"
+          ldflags: -X "${{ env.REPO_URL }}app.GitRepo=https://${{ env.REPO_URL }}" -X "${{ env.REPO_URL }}app.AppVersion=${{ env.APP_VERSION }}" -X "${{ env.REPO_URL }}app.BuildTime=${{ env.BUILD_TIME }}" -X ${{ env.REPO_URL }}app.GitCommit=${{ github.sha }} -X ${{ env.REPO_URL }}app.GitRef=${{ github.ref }}
