@@ -2,6 +2,8 @@ module github.com/RoyalFlyBy/PornHubDownloader
 
 go 1.19
 
+replace github.com/BRUHItsABunny/go-phub v0.0.6 => github.com/RoyalFlyBy/go-phub v0.0.0-20221217072741-267fdc9f151d
+
 require (
 	github.com/BRUHItsABunny/bunnlog v0.0.1
 	github.com/BRUHItsABunny/bunterm v0.0.2
