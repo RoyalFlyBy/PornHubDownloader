@@ -70,6 +70,9 @@ You can log in by adding a `-username` and `-password` flag like this:
 
 Alternatively, if you don't want to type in your username and or password each time u can set the `PHDL_USERNAME` `PHDL_PASSWORD` environment variables. Keep in mind the program will not always actually login since it actually keeps an active session after logging in.
 
+Finally, the program is able to self-check for updates.
+Run this command: `./pornhubdownloader -version`, it will print it's current version and if there's a new version it will state it as well.
+
 #### For developers
 You can access program-friendly downloader updates by adding a ```-daemon``` flag, this will cause the program to print JSON which you could parse and build a UI with.
 
@@ -87,7 +90,7 @@ This is by far the most complete downloader around.
 #### Future
 I don't plan on actively working on this project, I will update when I have time in case bugs occur caused by pornhub updating their services.
 
-Feel free to try to crack the .cookies file, if you succeed and can tell me how you did it it would be appreciated because I could always use tips on how to improve security.
+Feel free to try to crack the .session file, if you succeed and can tell me how you did it it would be appreciated because I could always use tips on how to improve security.
 
 If a feature is missing let me know.
 
