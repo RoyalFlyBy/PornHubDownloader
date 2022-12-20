@@ -2,14 +2,14 @@ module github.com/RoyalFlyBy/PornHubDownloader
 
 go 1.19
 
-replace github.com/BRUHItsABunny/go-phub v0.0.6 => github.com/RoyalFlyBy/go-phub v0.0.0-20221217072741-267fdc9f151d
+replace github.com/BRUHItsABunny/go-phub v0.0.8 => github.com/RoyalFlyBy/go-phub v0.0.0-20221220072219-409ab7ebcfc2
 
 require (
 	github.com/BRUHItsABunny/bunnlog v0.0.1
 	github.com/BRUHItsABunny/bunterm v0.0.2
-	github.com/BRUHItsABunny/gOkHttp v0.1.8
+	github.com/BRUHItsABunny/gOkHttp v0.1.9
 	github.com/BRUHItsABunny/go-ghvu v0.0.3
-	github.com/BRUHItsABunny/go-phub v0.0.6
+	github.com/BRUHItsABunny/go-phub v0.0.8
 	github.com/BRUHItsABunny/stringvarformatter v0.0.1
 	golang.org/x/exp v0.0.0-20221126150942-6ab00d035af9
 )

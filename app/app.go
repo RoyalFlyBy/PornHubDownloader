@@ -135,7 +135,7 @@ func (a *App) SetupClient() error {
 		}
 	}
 
-	f, err := os.OpenFile(".session", os.O_CREATE, 0600)
+	f, err := os.OpenFile(".session", os.O_CREATE|os.O_RDWR, 0600)
 	if err != nil {
 		return fmt.Errorf("os.OpenFile: %w", err)
 	}

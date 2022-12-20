@@ -2,6 +2,8 @@ package main
 
 import (
 	"fmt"
+	"io"
+	"os"
 	"sync"
 	"testing"
 	"time"
@@ -36,4 +38,20 @@ func TestRoutineChanLogic(t *testing.T) {
 
 	wg.Wait()
 	fmt.Println("Done")
+}
+
+func Test_FilePosition(t *testing.T) {
+	f, err := os.OpenFile("test.test", os.O_CREATE, 0600)
+	if err != nil {
+		t.Error(err)
+	}
+
+	offset, err := f.Seek(0, io.SeekCurrent)
+	if err != nil {
+		t.Error(err)
+	}
+
+	fmt.Println(offset)
+	f.Close()
+	os.Remove("test.test")
 }

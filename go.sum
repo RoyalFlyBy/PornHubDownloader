@@ -4,8 +4,8 @@ github.com/BRUHItsABunny/bunterm v0.0.2 h1:3O2pMatkuu4cMATk1l8m8s6b7yCKaQppBVov2
 github.com/BRUHItsABunny/bunterm v0.0.2/go.mod h1:sSlNmopYZChUJr4E2I6b/oTbckGgqLlnZVWozcg38Do=
 github.com/BRUHItsABunny/crypto-utils v0.0.5 h1:R2GkyU2I3kM5q77HmDT6omoe530d+Ikn6LqLP5vCamY=
 github.com/BRUHItsABunny/crypto-utils v0.0.5/go.mod h1:0P7k5dYqGmwk7zTjJue47aE2TRzNA9Fo3d4Bm5+SZIE=
-github.com/BRUHItsABunny/gOkHttp v0.1.8 h1:HqiXNZgj1czux+BQ8rJtsJiIUXKdfI+qQHyUbjFOdR0=
-github.com/BRUHItsABunny/gOkHttp v0.1.8/go.mod h1:ijWzqI55k+DL3jaueHQzJUuugaerdy7lhEBOuUFjY3k=
+github.com/BRUHItsABunny/gOkHttp v0.1.9 h1:ONCyzhr++NwSNY/A3hTqHs1bMW9UZVx9/7x755R9SKo=
+github.com/BRUHItsABunny/gOkHttp v0.1.9/go.mod h1:ijWzqI55k+DL3jaueHQzJUuugaerdy7lhEBOuUFjY3k=
 github.com/BRUHItsABunny/go-android-utils v0.0.27 h1:f5ead1OeyjUdq0+i30nLIWOlugup6KYZ4BKw631snVM=
 github.com/BRUHItsABunny/go-android-utils v0.0.27/go.mod h1:I7j/21qbeOPHEoKTBNFI5dRZHoU6qb3bDKdQ7wn+L7U=
 github.com/BRUHItsABunny/go-ghvu v0.0.3 h1:2iaJO6SVAVAWBoKm61tyS3zz+aF45iF1tK07gLbIhik=
@@ -16,8 +16,8 @@ github.com/OneOfOne/xxhash v1.2.8 h1:31czK/TI9sNkxIKfaUfGlU47BAxQ0ztGgd9vPyqimf8
 github.com/OneOfOne/xxhash v1.2.8/go.mod h1:eZbhyaAYD41SGSSsnmcpxVoRiQ/MPUTjUdIIOT9Um7Q=
 github.com/PuerkitoBio/goquery v1.8.0 h1:PJTF7AmFCFKk1N6V6jmKfrNH9tV5pNE6lZMkG0gta/U=
 github.com/PuerkitoBio/goquery v1.8.0/go.mod h1:ypIiRMtY7COPGk+I/YbZLbxsxn9g5ejnI2HSMtkjZvI=
-github.com/RoyalFlyBy/go-phub v0.0.0-20221217072741-267fdc9f151d h1:2pTCpFPWTH+lI3V0FFymwLXf01ePnCcx4qUMu4mwVhE=
-github.com/RoyalFlyBy/go-phub v0.0.0-20221217072741-267fdc9f151d/go.mod h1:R5iOcWsQnF3kZ4lXHcGa/Zw6BrGUQfxM8ko5wnUC8Uc=
+github.com/RoyalFlyBy/go-phub v0.0.0-20221220072219-409ab7ebcfc2 h1:rrOoyVfhDC90vDx7uCGbRcjwyjbn6B2+m5Z3lUyp1J4=
+github.com/RoyalFlyBy/go-phub v0.0.0-20221220072219-409ab7ebcfc2/go.mod h1:Zctg3QwUUdz2W+7Y9QNxAPaTCCCqFWbf93ra6JcfZ1s=
 github.com/andybalholm/cascadia v1.3.1 h1:nhxRkql1kdYCc8Snf7D5/D3spOX+dBgjA6u8x004T2c=
 github.com/andybalholm/cascadia v1.3.1/go.mod h1:R4bJ1UQfqADjvDa4P6HZHLh/3OxWWEqc0Sk8XGwHqvA=
 github.com/chzyer/logex v1.1.10/go.mod h1:+Ywpsq7O8HXn0nuIou7OrIPyXbp3wmkHB+jjWRnGsAI=
